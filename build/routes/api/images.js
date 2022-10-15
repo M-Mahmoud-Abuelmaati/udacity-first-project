@@ -23,10 +23,10 @@ router.get('/files', (req, res) => __awaiter(void 0, void 0, void 0, function* (
     const { width, height, img } = req.query;
     if (img) {
         try {
-            const imgLocation = path_1.default.join(`${__dirname}../../../public/imgs/${img}`);
+            const imgLocation = path_1.default.join(__dirname, `../../public/imgs/${img}`);
             const imgName = img.toString().replace('.jpg', '');
             const resizedImgLocation = yield (0, resizeImage_1.default)(imgName, imgLocation, parseInt(width), parseInt(height));
-            res.status(200).sendFile(`${resizedImgLocation}`);
+            res.status(200).sendFile(resizedImgLocation);
         }
         catch (error) {
             res.status(404).send('Unable to find the specified file');

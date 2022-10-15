@@ -9,6 +9,10 @@ This project has been created specially for udacity course using node js as back
     3. npm run dev      - used for starting the project in developing
     4. npm run test     - used for building and unit testing with jasmine
     5. npm run jasmine  - used for unit testing
-    6. npm run lint     - used for modifying the files from errors/warrnings with eslint 
+    6. npm run lint     - used for modifying the files from errors/warrnings with eslint
     7. npm run prettier - used for modifying the files to look better
 
+# API endpoints
+
+    1. http://localhost:3000/api/files?img=image.jpg
+    or http://localhost:3000/api/files?img=image.jpg&width=x&height=x
